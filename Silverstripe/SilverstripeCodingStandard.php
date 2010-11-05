@@ -54,6 +54,10 @@ class PHP_CodeSniffer_Standards_Silverstripe_SilverstripeCodingStandard extends 
 
     }//end getIncludedSniffs()
 
+    static public function isLowerCaseWithUnderScore($token)
+    {
+     	return strtolower($token) === $token;
+    }
 
 }//end class
 ?>

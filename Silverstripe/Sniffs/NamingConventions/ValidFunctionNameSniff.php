@@ -88,7 +88,7 @@ class Silverstripe_Sniffs_NamingConventions_ValidFunctionNameSniff implements PH
       $methodName = $phpcsFile->getDeclarationName($stackPtr);
 	$methodProps = $phpcsFile->getMethodProperties($stackPtr);
 	if ($methodProps['is_static']) {
-		if (PHP_CodeSniffer::isUnderscoreName($methodName)) {
+		if (!PHP_CodeSniffer_Standards_Silverstripe_SilverstripeCodingStandard::isLowerCaseWithUnderScore($methodName)) {
 		 $error = "Function name \"$methodName\" is invalid Static methods should be in lowercase_with_underscores() format.";
                  $phpcsFile->addError($error, $stackPtr);
 		}
