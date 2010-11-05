@@ -1,0 +1,5 @@
+A set of coding standards sniffs for Silverstripe.
+
+To use download and copy Silverstripe directory alongside the other standards or use the full path in the command
+
+e.g. phpcs --standard=/full/path/to/download
