@@ -3,3 +3,10 @@ A set of coding standards sniffs for Silverstripe.
 To use download and copy Silverstripe directory alongside the other standards or use the full path in the command
 
 e.g. phpcs --standard=/full/path/to/download
+
+Troubleshooting:
+-------------------------------
+phpcs -i
+will list all installed coding standards
+if Silverstripe is not on the list make sure the code is in a directory called Silverstripe inside the Standards directory
+
