@@ -72,7 +72,7 @@ class Silverstripe_Sniffs_WhiteSpace_DisallowFourSpacesSniff implements PHP_Code
         if ($stackPtr > 0 && $tokens[($stackPtr - 1)]['line'] === $line) {
             return;
         }
-        if (preg_match('/\s\s\s\s/', $tokens[$stackPtr]['content'])) {
+        if (preg_match('/ {4}/', $tokens[$stackPtr]['content'])) {
             $error = 'Spaces found for indenting. Always use hard tabs rather then spaces for indentation. 1 hard tab per nesting level.';
             $phpcsFile->addError($error, $stackPtr);
         }
