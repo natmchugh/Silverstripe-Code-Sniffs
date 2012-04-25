@@ -2,4 +2,13 @@
 
 <ruleset name="Silverstripe">
  <description>Silverstripe Coding Conventions</description>
+
+ <!-- Include some specific sniffs -->
+  <rule ref="PEAR.NamingConventions.ValidClassName"/>
+  <rule ref="PEAR.Commenting.FunctionComment"/>
+  <rule ref="Generic.PHP.DisallowShortOpenTag"/>
+  <rule ref="Zend.Files.ClosingTag"/>
+  <rule ref="Generic.Functions.OpeningFunctionBraceKernighanRitchie"/>
+
+
 </ruleset>
